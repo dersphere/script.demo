@@ -12,22 +12,32 @@ getLocalizedString = sys.modules['__main__'].getLocalizedString
 class GUI(xbmcgui.WindowXMLDialog):
 
     def __init__(self, *args, **kwargs):
+        # __init__ will be called when python creates object from this class
         xbmcgui.WindowXMLDialog.__init__(self, *args, **kwargs)
 
     def onInit(self):
+        # onInit will be called from xbmc (after __init__)
         # store xbmc keycodes for exit and backspace
         self.action_exitkeys_id = [10, 13]
+        
         # get control ids
         self.control_id_button_hello = 3000
         self.control_id_button_exit = 3001
         self.control_id_label_hello = 3011
+        
+        # translation ids
+        self.translation_id_hello = 3101
+        self.translation_id_exit = 3102
+        self.translation_id_helloworld = 3120
+        
         # set actions
         self.button_hello = self.getControl(self.control_id_button_hello)
         self.button_exit = self.getControl(self.control_id_button_exit)
         self.label_hello = self.getControl(self.control_id_label_hello)
+        
         # translate buttons
-        self.button_hello.setLabel(getLocalizedString(3101))
-        self.button_exit.setLabel(getLocalizedString(3102))
+        self.button_hello.setLabel(getLocalizedString(self.translation_id_hello))
+        self.button_exit.setLabel(getLocalizedString(self.translation_id_exit))
 
     def onAction(self, action):
         # onAction will be called on keyboard or mouse action
@@ -48,7 +58,7 @@ class GUI(xbmcgui.WindowXMLDialog):
             self.closeDialog()
 
     def sayHello(self):
-        self.label_hello.setLabel(getLocalizedString(3120))
+        self.label_hello.setLabel(getLocalizedString(self.translation_id_helloworld))
 
     def closeDialog(self):
         self.close()

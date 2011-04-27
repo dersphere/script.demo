@@ -1,4 +1,5 @@
 ﻿<window id="129">
+	<defaultcontrol always="false">3000</defaultcontrol>
 	<coordinates>
         <system>1</system>
         <posx>640</posx>
@@ -24,7 +25,7 @@
 			<aligny>center</aligny>
 			<texturenofocus>keyboard-btn-backspace.png</texturenofocus>
 			<texturefocus>keyboard-btn-backspace-focus.png</texturefocus>
-			<onright>12</onright>
+			<onright>3001</onright>
 		</control>
 		<control type="button" id="3001">
 			<description>Exit Button</description>
@@ -37,7 +38,7 @@
 			<aligny>center</aligny>
 			<texturenofocus>keyboard-btn-backspace.png</texturenofocus>
 			<texturefocus>keyboard-btn-backspace-focus.png</texturefocus>
-			<onleft>11</onleft>
+			<onleft>3000</onleft>
 		</control>
 		<control type="label" id="3011">
 			<description>Hello World Label</description>
