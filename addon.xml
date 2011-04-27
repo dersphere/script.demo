@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.demo"
+       name="Demo Script"
+       version="0.0.1"
+       provider-name="sphere">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Demo Script</summary>
+    <description lang="en">Hello World Demo Script</description>
+  </extension>
+</addon>
