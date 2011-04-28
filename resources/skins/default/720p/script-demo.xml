@@ -1,56 +1,64 @@
 ﻿<window id="129">
-	<defaultcontrol always="false">3000</defaultcontrol>
-	<coordinates>
+    <defaultcontrol always="false">3000</defaultcontrol>
+    <coordinates>
         <system>1</system>
         <posx>640</posx>
         <posy>360</posy>
     </coordinates>
-	<controls>
-		<control type="image">
-			<description>Transparent black Background</description>
+    <controls>
+        <control type="image">
+            <description>Black Background</description>
             <posx>-300</posx>
             <posy>-200</posy>
             <width>600</width>
             <height>400</height>
             <texture>black.png</texture>
+            <ondown>3000</ondown>
+            <onup>3000</onup>
+            <onleft>3000</onleft>
+            <onright>3000</onright>
         </control>
-		<control type="button" id="3000">
-			<description>Hello Button</description>
-			<posx>-180</posx>
-			<posy>120</posy>
-			<width>140</width>
-			<height>60</height>
-			<textoffsetx>12</textoffsetx>
-			<align>center</align>
-			<aligny>center</aligny>
-			<texturenofocus>keyboard-btn-backspace.png</texturenofocus>
-			<texturefocus>keyboard-btn-backspace-focus.png</texturefocus>
-			<onright>3001</onright>
-		</control>
-		<control type="button" id="3001">
-			<description>Exit Button</description>
-			<posx>80</posx>
-			<posy>120</posy>
-			<width>140</width>
-			<height>60</height>
-			<textoffsetx>12</textoffsetx>
-			<align>center</align>
-			<aligny>center</aligny>
-			<texturenofocus>keyboard-btn-backspace.png</texturenofocus>
-			<texturefocus>keyboard-btn-backspace-focus.png</texturefocus>
-			<onleft>3000</onleft>
-		</control>
-		<control type="label" id="3011">
-			<description>Hello World Label</description>
-			<posx>-150</posx>
-			<posy>-100</posy>
-			<width>300</width>
-			<height>200</height>
-			<align>center</align>
-			<aligny>top</aligny>
-			<textcolor>FFFFFFFF</textcolor>
-			<font>font13</font>
-			<visible>true</visible>
+        <control type="button" id="3000">
+            <description>Hello Button</description>
+            <posx>-180</posx>
+            <posy>120</posy>
+            <width>140</width>
+            <height>60</height>
+            <textoffsetx>12</textoffsetx>
+            <align>center</align>
+            <aligny>center</aligny>
+            <texturenofocus>keyboard-btn-backspace.png</texturenofocus>
+            <texturefocus>keyboard-btn-backspace-focus.png</texturefocus>
+            <onright>3001</onright>
         </control>
-	</controls>
+        <control type="button" id="3001">
+            <description>Exit Button</description>
+            <posx>80</posx>
+            <posy>120</posy>
+            <width>140</width>
+            <height>60</height>
+            <textoffsetx>12</textoffsetx>
+            <align>center</align>
+            <aligny>center</aligny>
+            <texturenofocus>keyboard-btn-backspace.png</texturenofocus>
+            <texturefocus>keyboard-btn-backspace-focus.png</texturefocus>
+            <onleft>3000</onleft>
+        </control>
+        <control type="label" id="3011">
+            <description>Hello World Label</description>
+            <posx>-150</posx>
+            <posy>-100</posy>
+            <width>300</width>
+            <height>200</height>
+            <align>center</align>
+            <aligny>top</aligny>
+            <textcolor>FFFFFFFF</textcolor>
+            <font>font13</font>
+            <visible>true</visible>
+            <ondown>3000</ondown>
+            <onup>3000</onup>
+            <onleft>3000</onleft>
+            <onright>3000</onright>
+        </control>
+    </controls>
 </window>
