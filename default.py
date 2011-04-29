@@ -17,7 +17,7 @@ print '[SCRIPT][%s] version %s initialized!' % (__scriptname__, __version__)
 
 if (__name__ == "__main__"):
     import resources.lib.demo as demo
-    ui = demo.GUI("script-demo.xml", __path__, "default")
+    ui = demo.GUI('script-%s-main.xml' % __scriptname__, __path__, 'default')
     ui.doModal()
     print '[SCRIPT][%s] version %s exited!' % (__scriptname__, __version__)
     del ui
