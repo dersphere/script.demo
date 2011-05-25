@@ -60,5 +60,15 @@
             <onleft>3000</onleft>
             <onright>3000</onright>
         </control>
+        <control type="edit" id="3100">
+            <description>TextBox Demo</description>
+            <posx>-150</posx>
+            <posy>0</posy>
+            <width>300</width>
+            <height>30</height>
+            <font>font14</font>
+            <textcolor>FFFFFFFF</textcolor>
+            <pulseonselect></pulseonselect>
+        </control>
     </controls>
 </window>

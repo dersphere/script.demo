@@ -24,6 +24,7 @@ class GUI(xbmcgui.WindowXMLDialog):
         self.control_id_button_hello = 3000
         self.control_id_button_exit = 3001
         self.control_id_label_hello = 3011
+        self.control_id_textbox_demo = 3100
         
         # translation ids
         self.translation_id_hello = 3101
@@ -34,6 +35,7 @@ class GUI(xbmcgui.WindowXMLDialog):
         self.button_hello = self.getControl(self.control_id_button_hello)
         self.button_exit = self.getControl(self.control_id_button_exit)
         self.label_hello = self.getControl(self.control_id_label_hello)
+        # self.textbox_demo = self.getControl(self.control_id_textbox_demo) # fixme
         
         # translate buttons
         self.button_hello.setLabel(getLocalizedString(self.translation_id_hello))
@@ -58,7 +60,9 @@ class GUI(xbmcgui.WindowXMLDialog):
             self.closeDialog()
 
     def sayHello(self):
-        self.label_hello.setLabel(getLocalizedString(self.translation_id_helloworld))
+        #textbox_string = self.textbox_demo.getText()
+        textbox_string = 'FIXME'
+        self.label_hello.setLabel(textbox_string)
 
     def closeDialog(self):
         self.close()
