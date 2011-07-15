@@ -59,7 +59,7 @@
             <onup>3000</onup>
             <onleft>3000</onleft>
             <onright>3000</onright>
-            <scroll>false</scroll>
+            <scrollout>false</scrollout>
             <pauseatend>1000</pauseatend>
             <resetonlabelchange>true</resetonlabelchange>
         </control>
