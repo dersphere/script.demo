@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <strings>
-  <string id="3101">Hello</string>
+  <string id="3101">Action</string>
   <string id="3102">Exit</string>
-  <string id="3120">Hello World</string>  
+  <string id="3120">Demo Text</string>  
 </strings>
